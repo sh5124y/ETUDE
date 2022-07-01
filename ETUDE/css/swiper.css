@@ -1,0 +1,217 @@
+ .banner .swiper-container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    background-color:black;
+}
+
+.banner .swiper-container-no-flexbox .swiper-slide {
+    float: left;
+}
+
+/*배너 쪽수 증가 혹은 감소*/
+.banner .swiper-container-vertical > .swiper-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.banner .swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+}
+
+.banner .swiper-container-android .swiper-slide,
+.banner .swiper-wrapper {
+    transition-duration: 0ms;
+    transform: translate3d(0px, 0, 0);
+}
+.banner .swiper-container-multirow > .swiper-wrapper {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.banner .swiper-container-free-mode > .swiper-wrapper {
+    transition-timing-function: ease-out;
+    margin: 0 auto;
+}
+
+/*슬라이드 넘어감*/
+.banner .swiper-slide {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform opacity;
+    z-index: 5;
+}  
+
+
+.banner .swiper-slide .container {z-index: 20;}
+
+.banner .swiper-slide:after {
+    content: ''; 
+    position: absolute; 
+    z-index: 2; 
+    left: 0; top: 0; 
+    width: 100%; height: 100%; 
+    background: #000; 
+    opacity: 0; 
+}
+
+.banner .swiper-slide-invisible-blank {
+    visibility: hidden;
+}
+
+
+.banner .swiper-container-autoheight,
+.banner .swiper-container-autoheight .swiper-slide {
+    height: auto;
+}
+
+.banner .swiper-container-autoheight .swiper-wrapper {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    transition-property: height, -webkit-transform;
+    transition-property: transform, height;
+}
+
+.banner .swiper-container-wp8-horizontal,
+.banner .swiper-container-wp8-horizontal > .swiper-wrapper {
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+}
+
+.banner .swiper-container-wp8-vertical,
+.banner .swiper-container-wp8-vertical > .swiper-wrapper {
+    -ms-touch-action: pan-x;
+    touch-action: pan-x;
+}
+
+
+.banner .swiper-container .swiper-nav{
+    position: absolute;
+    left:50%;
+    bottom: 19px;
+    width:128px;
+    height:35px;
+    margin-left: -64px;
+    text-align: center;
+    border-radius:18px;
+    background:rgba(0,0,0,.2);
+    z-index:10;
+}
+
+.banner .swiper-container .swiper-button-prev{
+    left:12px;
+    background-position: 0 0;
+}
+
+
+.banner .banner .swiper-container .swiper-button-next{
+    right:12px;
+    background-position: 0 -20px;
+}
+
+.banner .swiper-container .swiper-button-prev{
+    top:50%;
+    margin-top: -9px;
+    width:9px;
+    height:18px;
+    z-index: 11; 
+    background:none;
+    background-image: url("../img/btn_nav1.png") !important;
+}
+.banner .swiper-container .swiper-button-next{
+    top:50%;
+    margin-top: -9px;
+    width:9px;
+    height:18px;
+    z-index: 11; 
+    background:none;
+    background-image: url("../img/btn_nav2.png") !important;
+}
+
+.banner .swiper-button-prev{
+    left: 10px;
+    right: auto;
+    width:9px;
+    height:18px;
+} 
+
+.banner .swiepr-button-next{
+    right: 10px;
+    left: auto;
+    width:9px;
+    height:18px;
+}
+
+.banner .swiper-button-prev{
+    position: absolute;
+    top:50%;
+    width:27px;
+    height: 44px;
+    margin-top: -22px;
+    z-index:10;
+    cursor : pointer;
+    background-size:27px 44px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner .swiper-button-next{
+    position: absolute;
+    top:50%;
+    width:27px;
+    height: 44px;
+    margin-top: -22px;
+    z-index:10;
+    cursor : pointer;
+    background-size:27px 44px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.banner .swiper-container .swiper-nav .swiper-pagination-fraction{
+    display: inline-block;
+    color: #fff;
+    font-size: 17px;
+    font-family : 'Lato', sans-serif;
+    font-weight: 500px;
+    line-height: 35px;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+ .banner .swiper-container .swiper-nav .swiper-pagination-fraction > span{
+    display:inline-block;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    line-height: 35px;
+}  
+
+/* end banner */
+

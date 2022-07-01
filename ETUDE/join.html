@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+    <title>회원가입</title>
+
+    <style type="text/css">
+
+        .container {position:relative; width:460px; margin:0 auto; font-family: '맑은 고딕', '돋움', 'sans-serif';}
+        
+        #header{width:100%; height: 60px; top:0; left:0;border-bottom:1px solid #d2d2d2;
+            background-color:#f3f3f3; text-align: center;  }
+        #header .font_navy{font-size: 20px; color:#062c5e; display: inline-block; font-weight: bold;}
+        #header .font_pink{font-size: 20px; color:#f54a7e; display: inline-block; font-weight: bold;}
+
+        .page_header{margin-top : 50px; margin-bottom:60px;}
+        .page_header h1{font-size: 30px; font-weight: 600;}
+        .page_header p{font-size: 15px; display:inline-block;}
+        .page_header strong{font-size: 15px; color :#f54a7e; font-weight:normal;}
+
+        input{width:430px; height:60px;}
+
+        .textbox input[type="text"],
+        .textbox input[type="password"]{
+            line-height:normal;
+            padding: .8em .5em;
+            border: 1px solid #d2d2d2;
+            border-radius:0;
+            outline: 0;
+        }
+
+        .textbox input:focus{
+            box-shadow: 0 0 5px gray;
+        }
+
+
+        .btn{border:1px solid #d2d2d2; display:inline-block; padding:10px;
+            position:relative; text-align: center; transition: background 600ms ease, color 600ms ease; }
+        
+
+        #join_btn{
+            width: 100%;;
+            height:60px;
+            margin-bottom:30px;
+            border-radius:0;
+            border:0px;
+            color:white;
+            background-color:rgb(68, 68, 68);
+            font-size:20px;
+        }
+        .guid h5{font-size:15px; font-weight:bold; margin-bottom:20px;}
+        .guid p{color : #747474; display: inline-block;
+        letter-spacing: 0.7px; font-size:14px;}
+        .guid a{color:#000; text-decoration: none; word-break: break-all;}
+        .guid strong{color :black; font-weight: 500;
+            letter-spacing: 0.7px;}
+
+    </style> 
+
+    <!--파비콘 -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header id = "header">
+        <div class="container">
+            <h3 class="font_navy">뷰티포인트 X </h3>
+            <h3 class="font_pink">에뛰드 </h3>
+            <h3 class="font_navy">회원가입</h3>
+        </div>
+    </header>
+
+    <div class ="container">
+        <div class="page_header">
+            <h1>아모레퍼시픽 통합멤버십 회원 가입을 환영합니다!</h1>
+            <p>아모레퍼시픽 통합멤버십(뷰티포인트)에 가입하시면
+                <strong> 에뛰드 </strong> 외
+                모든 브랜드 온/오프 매장에서 상품을 구매 할 때마다 현금처럼
+                사용할 수 있는 포인트 적립과 사용 등 다양한 혜택을 받으실 수
+                있습니다.
+            </p>
+        </div>
+        <form method="post" action="join.php">
+            <div class="textbox">
+                <input type = "text" name="userName"  placeholder="이름(실명으로 입력해주세요)"><br><br>
+
+                <input type ="text" name="phone" placeholder="전화번호 입력('-'없이 작성)"><br><br>
+     
+                <input type ="text" name="userid" placeholder="아이디 입력"><br><br>
+                <input type="password" name="pass" placeholder="비밀번호 입력"><br><br>
+                <input type="password" name="passcheck" placeholder="비밀번호 확인"><br><br>
+            </div>
+            <div class="guid">
+                <h5>개인정보 처리 위탁에 대한 안내</h5>
+                <p>※아모레퍼시픽은 서비스 향상 및 원활한 전산 처리 등을 위하여 이용자의
+                    개인정보 관리를 외부 전문업체에 위탁하고 있습니다. 아모레퍼시픽의 업무를
+                    위탁받는 자 및 업무의 내용은 아모레퍼시칙 홈페이지
+                    <a href="https://www.beautypoint.co.kr/footer/privacy/personal.html" target="_blank">
+                        https://www.beautypoint.co.kr/footer/privacy/personal.html</a>
+                    에서 확인 하실 수 있습니다.
+                </p>
+            </div>
+            <button id="join_btn" type="submit">회원가입</button>
+        </form>
+        
+    </div>
+</body>
+</html>
