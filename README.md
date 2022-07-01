@@ -6,7 +6,7 @@
 <img width="944" alt="에뛰드3" src="https://user-images.githubusercontent.com/84841632/176922677-b6a1c5bf-839a-43be-a340-e921be6d872a.png">
 
 
-사용기술 / 개발환경
-개발기간 : 2022.04 ~ 2022.7
+사용기술 / 개발환경 <br>
+개발기간 : 2022.04 ~ 2022.7<br>
 사용기술 : HTML, CSS, JavaScript
 개발환경 : Visual Studio Code
