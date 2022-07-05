@@ -2,6 +2,9 @@
 에뛰드 클론코딩🎀💄
 
 
+<b> 실행주소 </b>
+http://127.0.0.1:5500/ETUDE.html
+
 <b>실행화면 </b>
 <img width="947" alt="에뛰드" src="https://user-images.githubusercontent.com/84841632/176922056-e1d96d70-2bf7-4c1a-84dc-d6b61a5e6e66.png">
 <img width="944" alt="에뛰드3" src="https://user-images.githubusercontent.com/84841632/176922677-b6a1c5bf-839a-43be-a340-e921be6d872a.png">
