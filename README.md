@@ -1,5 +1,5 @@
 # ETUDE
-에뛰드 클론코딩🎀💄
+
 
 <b>실행화면 </b>
 ![image](https://user-images.githubusercontent.com/84841632/177353606-7c7f0640-9293-4e48-8768-9599be4ab273.png)
